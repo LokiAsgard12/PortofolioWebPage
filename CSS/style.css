@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  font-family: "AvenirNext-Regular", "Lato", "Hirago KakuGothic ProN", Meiryo,
+    sans-serif;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background-color: rgba(34, 49, 52, 0.9);
+  height: 65px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+footer {
+  color: white;
+  background-color: rgba(34, 49, 52, 0.9);
+  height: 100px;
+  padding-top: 10px;
+  width: 100%;
+}
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* Nav Bar */
+.header-left {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  float: left;
+  justify-content: space-between;
+  margin-top: 0.3rem;
+  padding: 15px auto;
+}
+.header-left h1 {
+  font-size: 1.5em;
+  color: white;
+  letter-spacing: 0.3em;
+}
+.header-left a {
+  color: #e8e2e2;
+  display: block;
+  padding: 0rem 0.5rem;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+.header-left ul {
+  margin-left: 2.5rem;
+}
+.header-left li {
+  display: inline-block;
+  list-style: none;
+  padding-top: 0.3rem;
+  padding-right: 2.5rem;
+}
+.header-left a:hover {
+  background-color: grey;
+}
+.menu-icon {
+  padding: 7px 0 !important;
+}
+.header-right {
+  float: right;
+  margin: 0.5rem;
+  width: fit-content;
+}
+.fa fa-bars menu-icon {
+  margin: 0;
+}
+/* Isi Bagian atas */
+.top-wrapper {
+  padding: 100px 0 100px 0;
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+.top-wrapper h1 {
+  font-size: 5em;
+  letter-spacing: 10px;
+  line-height: 0;
+}
+.top-wrapper h2 {
+  font-size: 2em;
+  font-weight: 100;
+}
+.dot {
+  font-family: "Lucida Grande";
+  color: gold;
+}
+.logo {
+  width: 400px;
+}
+/* Bagian Atas kedua */
+.tentang-saya {
+  background-color: #f7f5eb;
+  color: black;
+  text-align: center;
+}
+.tentang-saya h3 {
+  padding-top: 40px;
+}
+.tentang-saya p {
+  padding-bottom: 40px;
+}
+.proyek-wrapper {
+  height: fit-content;
+  padding-bottom: 80px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.projeks {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: fit-content;
+}
+.proyeks {
+  float: left;
+  margin: 0 2.5rem;
+  width: 25%;
+}
+.proyek-icon {
+  position: relative;
+}
+.proyek-icon img {
+  width: 100%;
+}
+.message-wrapper {
+  background-color: #e8e2e2;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
+.menu-icon {
+  color: white;
+  float: right;
+  display: none;
+  font-size: 50px;
+  padding: 22px 0;
+  margin-left: 192px;
+}
+.form-control {
+  border-radius: 0.3rem;
+  border: none;
+  height: 2.5em;
+  margin-bottom: 25px;
+  opacity: 0.8;
+  width: 75%;
+}
+.form-text {
+  border-color: white;
+  border-radius: 0.3rem;
+  height: 5em;
+  margin-bottom: 25px;
+  opacity: 0.8;
+  width: 75%;
+}
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  /* Ubah property cursor ke pointer */
+  cursor: pointer;
+  /* Ubah property box-shadow */
+  box-shadow: 0 7px #b0b337;
+}
+
+.btn {
+  padding: 12px 200px;
+  background-color: yellow;
+  margin-bottom: 40px;
+  color: black;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+.btn:hover {
+  opacity: 1;
+}
+.btn:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+  left: 0px;
+}
+.footer-left {
+  float: left;
+}
+.footer-left h2 {
+  font-size: 1.5em;
+  color: white;
+  letter-spacing: 0.3em;
+}
+.footer-right {
+  float: right;
+}
+.footer-right a {
+  display: block;
+  color: #f7f5eb;
+  font-size: small;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.footer-right a:hover {
+  background-color: grey;
+}
+.clear {
+  clear: left;
+}

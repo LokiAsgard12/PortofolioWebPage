@@ -1,0 +1,56 @@
+/* Untuk PC */
+@media all and (min-width: 1201px) {
+  .fa fa-bars menu-icon {
+    display: none !important;
+  }
+}
+
+.proyeks {
+  float: left;
+  margin: 0 2.5rem;
+  margin-left: 4rem;
+  width: 25%;
+}
+/* Untuk Tablet */
+@media all and (max-width: 1200px) {
+  /*Header left*/
+  .header-left ul {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  /*Top wrapper*/
+  .top-wrapper h1 {
+    font-size: 3em;
+  }
+  .proyeks {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+  /* Tambahkan CSS untuk header-right */
+  .header-left ul {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  /* Font Top Wrapper */
+  .top-wrapper h1 {
+    font-size: 2.5em;
+  }
+  .top-wrapper h2 {
+    font-size: 2em;
+  }
+  /* Tambahkan CSS untuk proyek */
+  .proyeks {
+    margin: 0 auto;
+    padding-left: 25px;
+    width: 100%;
+  }
+}
