@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+button {
+  background-color: rgba(34, 49, 52, 0.9);
+  border: none;
+  box-shadow: none;
+}
 body {
   margin: 0 auto;
   font-family: "AvenirNext-Regular", "Lato", "Hirago KakuGothic ProN", Meiryo,
@@ -43,7 +48,7 @@ footer {
   color: white;
   letter-spacing: 0.3em;
 }
-.header-left a {
+.container a {
   color: #e8e2e2;
   display: block;
   padding: 0rem 0.5rem;
@@ -64,17 +69,81 @@ ul {
 .header-left a:hover {
   background-color: grey;
 }
+
 .menu-icon {
   padding: 7px 0 !important;
 }
 .header-right {
   float: right;
-  margin: 0.5rem;
-  width: fit-content;
+}
+.header-right ul li {
+  list-style: none;
+}
+/* Contnet dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background-color: rgba(34, 49, 52, 0);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  min-width: 160px;
+  margin-right: 1rem;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  animation-name: dropdown;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  left: -6rem;
+}
+@keyframes dropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.dropdown-content a {
+  color: black;
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown-content.show {
+  display: block;
+}
+.menu-icon {
+  color: white;
+  display: none;
+  font-size: 50px;
 }
 .fa fa-bars menu-icon {
   margin: 0;
 }
+/* Scroll */
+.scroll-to {
+  display: block;
+}
+
 /* Isi Bagian atas */
 .top-wrapper {
   padding: 100px 0 100px 0;
@@ -108,12 +177,14 @@ ul {
   padding-top: 40px;
 }
 .tentang-saya p {
-  padding-bottom: 40px;
+  padding: 20px 40px;
+  text-align: justify;
 }
 .proyek-wrapper {
   height: fit-content;
   padding-bottom: 80px;
   text-align: center;
+  margin-top: 2rem;
   width: 100%;
   height: auto;
 }
@@ -135,19 +206,45 @@ ul {
 .proyek-icon img {
   width: 100%;
 }
-.message-wrapper {
+/* Sertifikat Syle */
+
+.sertifikat-wrapper {
   background-color: #e8e2e2;
+  height: fit-content;
+  padding-bottom: 80px;
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+}
+.heading h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.sertifikat {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: fit-content;
+}
+.sertifikats {
+  float: left;
+  margin: 0 2.5rem;
+  width: 25%;
+}
+.sertifikat-icon {
+  position: relative;
+}
+.sertifikat-icon img {
+  width: 100%;
+}
+/* Message Style */
+.message-wrapper {
+  background-color: white;
   text-align: center;
   padding-top: 20px;
   margin-bottom: 0px;
-}
-.menu-icon {
-  color: white;
-  float: right;
-  display: none;
-  font-size: 50px;
-  padding: 22px 0;
-  margin-left: 192px;
 }
 .form-control {
   border-radius: 0.3rem;
@@ -215,4 +312,7 @@ ul {
 }
 .clear {
   clear: left;
+}
+#btun {
+  background-color: white;
 }

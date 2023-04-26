@@ -1,7 +1,10 @@
 /* Untuk PC */
 @media all and (min-width: 1201px) {
-  .fa fa-bars menu-icon {
+  /* .fa fa-bars menu-icon {
     display: none !important;
+  } */
+  .header-right {
+    display: none;
   }
 }
 
@@ -14,7 +17,7 @@
 /* Untuk Tablet */
 @media all and (max-width: 1200px) {
   /*Header left*/
-  .header-left ul {
+  .header-left ul li {
     display: none;
   }
   .menu-icon {
@@ -28,6 +31,11 @@
     width: 50%;
     margin: 0 auto;
     padding: 0 20px;
+  }
+  .sertifikats {
+    margin: 0 auto;
+    padding: 25px;
+    width: 50%;
   }
 }
 
@@ -51,6 +59,11 @@
   .proyeks {
     margin: 0 auto;
     padding-left: 25px;
+    width: 100%;
+  }
+  .sertifikats {
+    margin: 0 auto;
+    padding: 25px;
     width: 100%;
   }
 }
