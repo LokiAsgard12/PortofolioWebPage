@@ -7,9 +7,11 @@ button {
   box-shadow: none;
 }
 body {
+  color: rgba(255, 255, 255, 0.96);
   margin: 0 auto;
   font-family: "AvenirNext-Regular", "Lato", "Hirago KakuGothic ProN", Meiryo,
     sans-serif;
+  background-color: #242424;
 }
 a {
   text-decoration: none;
@@ -85,7 +87,6 @@ ul {
   display: inline-block;
 }
 .dropbtn {
-  background-color: rgba(34, 49, 52, 0);
   color: white;
   font-size: 16px;
   border: none;
@@ -95,6 +96,7 @@ ul {
   display: block;
 }
 .dropdown-content {
+  background-color: rgba(34, 49, 52, 0.9);
   display: none;
   position: absolute;
   z-index: 1;
@@ -102,7 +104,7 @@ ul {
   margin-right: 1rem;
   padding: 10px;
   border-radius: 4px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(246, 241, 241, 0.2);
   animation-name: dropdown;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
@@ -120,13 +122,13 @@ ul {
   }
 }
 .dropdown-content a {
-  color: black;
+  color: white;
   display: block;
   padding: 10px 16px;
   text-decoration: none;
 }
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #363636;
 }
 .dropdown-content.show {
   display: block;
@@ -145,32 +147,59 @@ ul {
 }
 
 /* Isi Bagian atas */
+/* .top-wrapper */
 .top-wrapper {
   padding: 100px 0 100px 0;
   background-size: cover;
-  color: black;
+  color: white;
   text-align: center;
 }
+
+.container-top-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-wrapper {
+  text-align: center;
+}
+
 .top-wrapper h1 {
   font-size: 5em;
-  letter-spacing: 10px;
+  letter-spacing: 7px;
   line-height: 0;
 }
+
 .top-wrapper h2 {
   font-size: 2em;
   font-weight: 100;
 }
+
 .dot {
   font-family: "Lucida Grande";
   color: gold;
 }
+
 .logo {
-  width: 400px;
+  max-width: 200px;
+  margin-left: auto;
 }
+
 /* Bagian Atas kedua */
 .tentang-saya {
-  background-color: #f7f5eb;
-  color: black;
+  background-color: #100f10;
+  border-radius: 15px;
+  color: white;
   text-align: center;
 }
 .tentang-saya h3 {
@@ -181,6 +210,7 @@ ul {
   text-align: justify;
 }
 .proyek-wrapper {
+  background-color: #100f10;
   height: fit-content;
   padding-bottom: 80px;
   text-align: center;
@@ -206,18 +236,25 @@ ul {
 .proyek-icon img {
   width: 100%;
 }
+p,
+.text-content {
+  text-align: justify;
+}
 /* Sertifikat Syle */
 
 .sertifikat-wrapper {
-  background-color: #e8e2e2;
+  /* background-color: #e8e2e2; */
+  background-color: #100f10;
+  border-radius: 15px;
   height: fit-content;
   padding-bottom: 80px;
   text-align: center;
-  margin-top: 2rem;
+  margin: 2rem auto;
   width: 100%;
   height: auto;
 }
 .heading h2 {
+  color: rgba(255, 255, 255, 0.96);
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -232,6 +269,9 @@ ul {
   float: left;
   margin: 0 2.5rem;
   width: 25%;
+}
+.sertifikats h3 {
+  color: rgba(255, 255, 255, 0.96);
 }
 .sertifikat-icon {
   position: relative;
