@@ -69,7 +69,7 @@ ul {
   display: inline-block;
   list-style: none;
   padding-top: 0.3rem;
-  padding-right: 2.5rem;
+  padding-right: 1.3rem;
 }
 .header-left a:hover {
   background-color: grey;
@@ -158,20 +158,20 @@ ul {
   text-align: center;
 }
 
-.container-top-wrap {
+/* .container-top-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.content-wrapper {
+/* .content-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-}
+} */
 
 .text-wrapper {
   text-align: center;
@@ -194,7 +194,8 @@ ul {
 }
 
 .logo {
-  max-width: 200px;
+  width: 400px;
+  max-width: 400px;
   margin-left: auto;
 }
 

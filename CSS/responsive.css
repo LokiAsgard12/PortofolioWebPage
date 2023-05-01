@@ -32,6 +32,9 @@
     padding: 25px;
     width: 50%;
   }
+  .logo {
+    width: 300px;
+  }
 }
 
 /* Untuk Smartphone */
@@ -49,10 +52,13 @@
   }
   .top-wrapper h1 {
     font-size: 2.5em;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
   }
   .top-wrapper h2 {
     font-size: 2em;
+  }
+  .logo {
+    width: 200px;
   }
   /* Tambahkan CSS untuk proyek */
   .proyeks {
