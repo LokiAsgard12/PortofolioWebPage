@@ -1,7 +1,6 @@
 // Select the button and dropdown content elements
 var dropBtn = document.getElementById("dropBtn");
-var dropdownContent = document.getElementById("dropdownContent");
-
+var dropdownContent = document.getElementById("dropdownContent"); 
 // Add event listener to the button
 dropBtn.addEventListener("click", function() {
   // Toggle the display of the dropdown content
@@ -42,3 +41,6 @@ scrollLink.forEach(function(link){
   });
   })
 
+// Download
+
+function downloadPDF(){}

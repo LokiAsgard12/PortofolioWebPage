@@ -60,6 +60,9 @@
   .logo {
     width: 200px;
   }
+  .btn {
+    padding: 12px 150px;
+  }
   /* Tambahkan CSS untuk proyek */
   .proyeks {
     margin: 0 auto;
@@ -70,5 +73,8 @@
     margin: 0 auto;
     padding: 25px;
     width: 100%;
+  }
+  .btn {
+    padding: 12px 100px;
   }
 }
